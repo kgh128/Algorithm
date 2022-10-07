@@ -1,7 +1,7 @@
 # Breadth-First Serach
 
 ## BFS 순서
-    ![BFS.png](./Image/BFS.png)
+   ![BFS.png](/Theory/Image/BFS.png).
 
     1. root 노드를 먼저 검색
     2. 단계1에 있는 모든 노드들을 검색
@@ -122,4 +122,4 @@ int main(void) {
 
 
 
-![출처](https://better-tomorrow.tistory.com/entry/DFS-BFS-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0).
+[출처](https://better-tomorrow.tistory.com/entry/DFS-BFS-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0).
