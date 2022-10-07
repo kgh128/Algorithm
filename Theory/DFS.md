@@ -1,7 +1,8 @@
 # Depth-First Search
 
 ## DFS 순서
-
+   ![DFS.png](/Theory/Image/DFS.png).
+   
     1. root 노드 방문
     2. 그 노드의 모든 descendant 노드들을 차례로 방문
        - 보통 left -> right
@@ -42,7 +43,7 @@ void dfs(int x)
 	{
 		int y = graph[x][i];
 		if (!visited[y]) // 방문하지 않았으면 즉 visited가 False일 때 not을 해주면 True가 되므로 아래 dfs 실행
-            dfs(y); // 재귀적으로 방문
+            		dfs(y); // 재귀적으로 방문
 	}
 }
 

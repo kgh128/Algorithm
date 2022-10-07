@@ -1,6 +1,7 @@
 # Breadth-First Serach
 
 ## BFS 순서
+   ![BFS.png](/Theory/Image/BFS.png).
 
     1. root 노드를 먼저 검색
     2. 단계1에 있는 모든 노드들을 검색
