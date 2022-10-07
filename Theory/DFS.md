@@ -2,6 +2,7 @@
 
 ## DFS 순서
 
+   ![DFS.png](/Theory/Image/DFS.png).
     1. root 노드 방문
     2. 그 노드의 모든 descendant 노드들을 차례로 방문
        - 보통 left -> right
