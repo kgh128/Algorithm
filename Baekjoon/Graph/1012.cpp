@@ -7,13 +7,15 @@ int M, N, K;                // 밭의 가로길이, 세로길이, 배추의 개�
 int farm[50][50];           // 밭의 지도
 bool visited[50][50];       // 배추 방문 여부 
 int worms;                  // 필요한 최소의 지렁이 개수
-pair<int, int> buf[50];     // 각 테스트 케이스의 배추 위치 저장할 임시 버퍼
+pair<int, int> buf[2500];     // 각 테스트 케이스의 배추 위치 저장할 임시 버퍼
                             // X: buf[i].second, Y: buf[i].first
 
-int dir[4][2] = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};     // 상하좌우 방향
+// 상하좌우 방향
+int dy[4] = {-1, 1, 0, 0};
+int dx[4] = {0, 0, -1, 1};
 
 
-void bfs(int start_x, int start_y) {
+void bfs(int start_y, int start_x) {
     queue<pair <int, int>> q;
     pair<int, int> v; // 기준 노드
     pair<int, int> n; // 연결 노드
@@ -31,8 +33,8 @@ void bfs(int start_x, int start_y) {
 
         // 상하좌우의 노드 탐색
         for (int i = 0; i < 4; i++) {
-            n.first = v.first + dir[i][0];
-            n.second = v.second + dir[i][1];
+            n.first = v.first + dy[i];
+            n.second = v.second + dx[i];
 
             // 범위를 넘어가는 노드들은 패스
             if (n.first < 0 || n.first > N-1 || n.second < 0 || n.second > M-1) {
@@ -66,13 +68,16 @@ int main(void) {
         }
 
         // 4. bfs로 연결된 배추들 탐색
+        // 탐색할 때 buf 배열을 이용하여 배추(1)들만 탐색 -> 이중 for문 사용안해도 됨.
+        // (0인 곳은 아예 접근 X)
         // 상하좌우로 연결된 배추들 덩어리를 찾으면 지렁이 + 1
-        for (int y = 0; y < N; y++) {
-            for (int x = 0; x < M; x++) {
-                if (farm[y][x] == 1 && visited[y][x] == false) {
-                    bfs(x, y);
-                    worms++;
-                }
+        for (int j = 0; j < K; j++) {
+            int y = buf[j].first;
+            int x = buf[j].second;
+
+            if (visited[y][x] == false) {
+                bfs(y, x);
+                worms++;
             }
         }
 
