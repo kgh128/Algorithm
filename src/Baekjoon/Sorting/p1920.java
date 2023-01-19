@@ -12,19 +12,19 @@ public class p1920 {
 
         // 1. 입력받기
         int N = Integer.parseInt(br.readLine());
-        long[] stNum = new long[N];   // standard numbers
+        int[] stNum = new int[N];   // standard numbers
         String[] buffer = br.readLine().split(" ");
 
         for (int i = 0; i < N; i++) {
-            stNum[i] = Long.parseLong(buffer[i]);
+            stNum[i] = Integer.parseInt(buffer[i]);
         }
 
         int M = Integer.parseInt(br.readLine());
-        long[] cpNum = new long[M];   // compared numbers
+        int[] cpNum = new int[M];   // compared numbers
         buffer = br.readLine().split(" ");
 
         for (int i = 0; i < M; i++) {
-            cpNum[i] = Long.parseLong(buffer[i]);
+            cpNum[i] = Integer.parseInt(buffer[i]);
         }
 
         // 2. stNum 배열 오름차순 정렬 - 이분탐색을 쓰기 위해서
