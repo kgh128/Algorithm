@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce2167d1-e57b-47b7-91c9-6d15fce97ec5" name="Changes" comment="Solve 1920">
-      <change afterPath="$PROJECT_DIR$/src/Baekjoon/Sorting/p2751.java" afterDir="false" />
+    <list default="true" id="ce2167d1-e57b-47b7-91c9-6d15fce97ec5" name="Changes" comment="Solve 2751">
+      <change afterPath="$PROJECT_DIR$/src/Baekjoon/Sorting/p10989.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +44,20 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.p2751">
+  <component name="RunManager" selected="Application.p10989">
+    <configuration name="p10989" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Baekjoon.Sorting.p10989" />
+      <module name="Problem-Solving" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Baekjoon.Sorting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="p13458" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Baekjoon.Math.p13458" />
       <module name="Problem-Solving" />
@@ -99,6 +112,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.p10989" />
         <item itemvalue="Application.p2751" />
         <item itemvalue="Application.p2750" />
         <item itemvalue="Application.p1920" />
@@ -129,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674140839225</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Solve 2751">
+      <created>1674205449993</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674205449993</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,6 +167,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Solve 13458" />
     <MESSAGE value="Solve 1920" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve 1920" />
+    <MESSAGE value="Solve 2751" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve 2751" />
   </component>
 </project>
