@@ -10,7 +10,7 @@ public class p10989 {
 
         // 1. 입력받기
         int N = Integer.parseInt(br.readLine());
-        int num[] = new int[N];
+        int[] num = new int[N];
 
         for (int i = 0; i < N; i++) {
             num[i] = Integer.parseInt(br.readLine());
