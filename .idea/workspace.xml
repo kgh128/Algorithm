@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce2167d1-e57b-47b7-91c9-6d15fce97ec5" name="Changes" comment="Solve 10989">
-      <change afterPath="$PROJECT_DIR$/src/Baekjoon/Sorting/p10815.java" afterDir="false" />
+    <list default="true" id="20d97b8e-b34c-45d5-b8c4-93c9b5f184d5" name="Changes" comment="Solve 10989">
+      <change afterPath="$PROJECT_DIR$/src/Baekjoon/Stack/p10828.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +44,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.p10815">
+  <component name="RunManager" selected="Application.p10828">
     <configuration name="p10815" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Baekjoon.Sorting.p10815" />
       <module name="Problem-Solving" />
@@ -58,12 +58,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="p10989" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Baekjoon.Sorting.p10989" />
+    <configuration name="p10828" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Baekjoon.Stack.p10828" />
       <module name="Problem-Solving" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Baekjoon.Sorting.*" />
+          <option name="PATTERN" value="Baekjoon.Stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,8 +71,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="p1920" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Baekjoon.Sorting.p1920" />
+    <configuration name="p10989" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Baekjoon.Sorting.p10989" />
       <module name="Problem-Solving" />
       <extension name="coverage">
         <pattern>
@@ -112,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.p10828" />
         <item itemvalue="Application.p10815" />
         <item itemvalue="Application.p10989" />
         <item itemvalue="Application.p2751" />
         <item itemvalue="Application.p2750" />
-        <item itemvalue="Application.p1920" />
       </list>
     </recent_temporary>
   </component>
