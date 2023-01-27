@@ -1,4 +1,4 @@
-package Baekjoon.Deque;
+package Baekjoon;
 
 import java.io.*;
 

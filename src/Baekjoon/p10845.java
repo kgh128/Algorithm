@@ -1,4 +1,4 @@
-package Baekjoon.Queue;
+package Baekjoon;
 
 import java.io.*;
 

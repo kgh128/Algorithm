@@ -1,9 +1,11 @@
-package Baekjoon.Sorting;
+package Baekjoon;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class p10989 {
+public class p2750 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder bw = new StringBuilder();
@@ -16,10 +18,10 @@ public class p10989 {
             num[i] = Integer.parseInt(br.readLine());
         }
 
-        // 2. 오름차순으로 정렬하기
+        // 2. 오름차순 정렬
         Arrays.sort(num);
 
-        // 3. 결과 출력하기
+        // 3. 결과 출력
         for (int i = 0; i < N; i++) {
             bw.append(num[i]).append('\n');
         }
