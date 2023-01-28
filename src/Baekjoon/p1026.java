@@ -9,6 +9,7 @@ public class p1026 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         // 1. 입력받기
+        int S = 0;
         int N = Integer.parseInt(br.readLine());
         Integer[] A = new Integer[N];
         Integer[] B = new Integer[N];
@@ -26,8 +27,6 @@ public class p1026 {
         Arrays.sort(B, Collections.reverseOrder()); // 내림차순 정렬
 
         // 3. S의 최솟값 계산
-        int S = 0;
-
         for (int i = 0; i < N; i++) {
             S += A[i] * B[i];
         }
