@@ -1,7 +1,9 @@
+package Programmers;
+
 import java.lang.*;
 import java.util.*;
 
-class Solution {
+class 폰켓몬 {
     public int solution(int[] nums) {
         int answer = 0;
         int getPokemonNums = nums.length / 2;  

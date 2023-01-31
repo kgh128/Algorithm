@@ -1,6 +1,8 @@
+package Programmers;
+
 import java.util.*;
 
-class Solution {
+class 완주하지_못한_선수 {
     public String solution(String[] participant, String[] completion) {
         String answer = "";
         HashMap<String, Integer> map = new HashMap<String, Integer>(99999);
