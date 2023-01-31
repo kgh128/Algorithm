@@ -28,8 +28,7 @@ public class p11650 {
         });
 
         // 3. 출력하기
-        for (int i = 0; i < N; i++) {
-            Pair pair = pairs.get(i);
+        for (Pair pair: pairs) {
             bw.append(pair.getX()).append(' ').append(pair.getY()).append('\n');
         }
         System.out.print(bw);
