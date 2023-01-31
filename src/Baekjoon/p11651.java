@@ -30,6 +30,5 @@ public class p11651 {
             bw.append(pairs[i][0]).append(' ').append(pairs[i][1]).append('\n');
         }
         System.out.print(bw);
-        //다시
     }
 }
