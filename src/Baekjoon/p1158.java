@@ -37,7 +37,7 @@ public class p1158 {
         }
 
         // 4. 결과 출력
-        bw.replace(bw.length()-2, bw.length()-1, ">");
+        bw.replace(bw.length()-2, bw.length(), ">");
         System.out.print(bw);
     }
 }
