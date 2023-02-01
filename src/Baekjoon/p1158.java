@@ -20,7 +20,7 @@ public class p1158 {
             queue.add(i);
         }
 
-        // 3. 큐가 빌 때까지 순환하면서 3번째 원소 출력
+        // 3. 큐가 빌 때까지 순환하면서 K번째 원소 출력
         int count = 0;
 
         while (!queue.isEmpty()) {
