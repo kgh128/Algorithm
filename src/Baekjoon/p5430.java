@@ -13,7 +13,7 @@ public class p5430 {
 
         for (int i = 0; i < T; i++) {
             // 2. 입력 & 파싱
-            String[] functions = br.readLine().split("");
+            String functions = br.readLine();
             int arraySize = Integer.parseInt(br.readLine());
 
             String inputs = br.readLine();
@@ -32,11 +32,11 @@ public class p5430 {
             boolean isReverseDeque = false;
 
             try {
-                for (String func : functions) {
-                    if (func.equals("R")) {
+                for (char func : functions.toCharArray()) {
+                    if (func == 'R') {
                         isReverseDeque = !isReverseDeque;
                     }
-                    else if (func.equals("D") && !isReverseDeque) {
+                    else if (func == 'D' && !isReverseDeque) {
                         deque.removeFirst();
                     }
                     else {
