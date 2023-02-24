@@ -40,11 +40,15 @@ public class p1644 {
             if (sum <= N) {
                 if (sum == N) count++;
 
+                // sum <= N인 경우에는 그 다음 소수를 sum에 더한다.
+                // 그 다음 소수: back이 가리키고 있는 소수의 다음 소수
                 if (back < primes.size()-1) {
                     sum += primes.get(++back);
                 }
                 else break; // 종료 조건 - sum <= N인데, back이 소수 배열 끝까지 왔으면 더이상 더할 소수가 없음.
             }
+            // sum > N인 경우에는 지금 더해져 있는 소수 중 가장 작은 소수를 sum에서 뺀다.
+            // 가장 작은 소수: front가 가리키고 있는 소수
             else {
                 sum -= primes.get(front++);
             }
