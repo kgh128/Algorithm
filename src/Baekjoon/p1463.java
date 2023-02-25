@@ -8,7 +8,6 @@ import java.io.*;
 2. 그 최솟값이 X를 1로 만드는데 사용하는 연산 횟수의 최솟값(dp[X])
 */
 
-/*
 public class p1463 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -28,7 +27,6 @@ public class p1463 {
         System.out.println(dp[N]);
     }
 }
-*/
 
 /*
 [문제 풀이2] - 재귀함수: 상대적으로 시간이 덜 걸리고, 메모리도 덜 씀.
@@ -51,8 +49,9 @@ public class p1463 {
    x = x/2 = 2/2 = 1: count + 1 + 2%2 = count + 1
    x = x/3 = 2/3 = 0: count + 1 + 2%3 = count + 1 + 2 = count + 3
    위의 식처럼 당연히 x/2를 수행했을 때의 count 값이 더 작으므로 x 값이 0인 경우는 걸러져서 이대로 코드 짜도 상관X
- */
+*/
 
+/*
 public class p1463 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -70,3 +69,4 @@ public class p1463 {
         return Math.min(minCount(x/2, count + 1 + x%2), minCount(x/3, count + 1 + x%3));
     }
 }
+*/
