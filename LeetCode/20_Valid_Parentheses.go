@@ -67,6 +67,10 @@ func isValid(s string) bool {
 // 2. slice를 간단하게 stack으로 이용하기
 // - 따로 Stack type과 그를 위한 메소드를 만들지 않는다.
 // - slice 연산을 이용해서 isEmpty(), push(), pop()의 효과를 낸다.
+// - isEmpty(): len(stack) == 0
+// - push(): stack = append(stack, data)
+// - pop(): stack[top]과 stack = stack[:top]
+// - peek(): stack[top]
 // - 괄호 쌍을 map의 key-value로 저장하여 괄호의 종류마다 if문을 사용하지 않는다.
 func isValid(s string) bool {
     pairs := map[rune]rune {
@@ -82,7 +86,7 @@ func isValid(s string) bool {
 
       if _, isOpen := pairs[data]; isOpen {                        // 1) 여는 괄호인 경우 stack에 집어넣는다.(push)
         stack = append(stack, data)
-      } else if len(stack) == 0 || pairs[stack[top]] != data {     // 2) 닫는 괄호인데, stack의 top이 자신과 쌍을 이루는 여는 괄호가 아니면 false를 리턴한다.
+      } else if len(stack) == 0 || pairs[stack[top]] != data {     // 2) 닫는 괄호인데, stack이 비어있거나 stack의 top이 자신과 쌍을 이루는 여는 괄호가 아니면 false를 리턴한다.
         return false
       } else {                                                     // 3) 닫는 괄호이고, stack의 top과 쌍을 이룬다면 stack의 top을 제거한다.(pop)
         stack = stack[:top]
