@@ -17,3 +17,10 @@ func convertToTitle(columnNumber int) string {
 // 2. 재귀호출 이용
 // - n: columnNumber
 // - 시간복잡도: O(log26n), 공간복잡도: O(log26n)
+func convertToTitle(columnNumber int) string {
+    if columnNumber == 0 {
+        return ""
+    }
+    columnNumber--
+    return convertToTitle(columnNumber / 26) + string('A' + byte(columnNumber % 26))
+}
