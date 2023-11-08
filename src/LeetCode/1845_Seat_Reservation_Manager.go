@@ -1,42 +1,54 @@
+import "container/heap"
+
+type IntHeap []int
+
+func (h IntHeap) Len() int {
+    return len(h)
+}
+
+func (h IntHeap) Less(i, j int) bool {
+    return h[i] < h[j]
+}
+
+func (h IntHeap) Swap(i, j int) {
+    h[i], h[j] = h[j], h[i]
+}
+
+func (h *IntHeap) Push(x interface{}) {
+    *h = append(*h, x.(int))
+}
+
+func (h *IntHeap) Pop() interface{} {
+    old := *h
+    n := len(old)
+    x := old[n-1]
+    *h = old[0:n-1]
+    return x
+}
+
 type SeatManager struct {
-    capacity int
-    nextSeat int
-    isReserved map[int]bool  
+    seats IntHeap
 }
 
 
 func Constructor(n int) SeatManager {
-    isReserved := make(map[int]bool)
+    seats := IntHeap{}
 
     for i := 1; i <= n; i++ {
-        isReserved[i] = false
+        heap.Push(&seats, i)
     }
 
-    return SeatManager{capacity: n, nextSeat: 1, isReserved: isReserved}
+    return SeatManager{seats: seats}
 }
 
 
 func (this *SeatManager) Reserve() int {
-    seatNumber := this.nextSeat
-    this.isReserved[seatNumber] = true
-
-    for i := seatNumber + 1; i <= this.capacity; i++ {
-        if !this.isReserved[i] {
-            this.nextSeat = i
-            break
-        }
-    }
-
-    return seatNumber
+    return heap.Pop(&this.seats).(int)
 }
 
 
 func (this *SeatManager) Unreserve(seatNumber int)  {
-    this.isReserved[seatNumber] = false
-
-    if seatNumber < this.nextSeat {
-        this.nextSeat = seatNumber
-    }
+    heap.Push(&this.seats, seatNumber)
 }
 
 
